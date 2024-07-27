@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>PostgreSQL and Prisma</title>
+  <link rel="icon" href="icon.png">
+
+</head>
+<body>
+  <div class="container1">
+    <div class="container2"><p class="heading2">Welcome to the </p> <p class="heading3">PostgreSQL and Prisma course</p></div>
+  </div>
+  <div style="display: flex;justify-content: center;">
+  <div style="width: 75%;min-height: 560px;display: flex;">
+    <div style="background-color: aliceblue;height: 100%; padding: 20px;padding-bottom:0px;width: fit-content;min-width: 70px;"><p style="font-size: 20px;border-bottom: 1px solid #000;cursor: pointer;color: blue;" id="class1" onclick="onclick1()">Class 1</p><p style="font-size: 20px;border-bottom: 1px solid #000;cursor: pointer;"  id="class2"onclick="onclick2()">Class 2</p></div>
+    <div style="display: flex;justify-content: center;">
+    <video width="1000px" controls id="video">
+      <source src="./vid1.mp4" type="video/mp4">
+      <source src="./vid1.mp4" type="video/ogg">
+    </video>
+    
+    
+  </div>
+  
+  </div>
+  </div>
+  <script>
+    var cl = "1"
+    function onclick1(){
+      cl = "1"
+      document.getElementById("class1").style.color = "blue";
+      document.getElementById("class2").style.color = "black";
+      document.getElementById("video").src="./vid1.mp4";
+      document.getElementById("video").load();
+    }
+    function onclick2(){
+      cl = "2"
+      document.getElementById("class2").style.color = "blue";
+      document.getElementById("class1").style.color = "black";
+      document.getElementById("video").src="./vid2.mp4";
+      document.getElementById("video").load();
+    }
+    function changeVideo() {
+  var video = document.getElementById("myVideo");
+  video.src = "./vid2.mp4"; // Set the new video source
+  video.load(); // Reload the video
+}
+  </script>
+</body>
+</html>
+
+
+<!-- <p style="font-size: 20px;border-bottom: 1px solid #000;">Class 3</p> -->
